@@ -14,7 +14,7 @@ class ImageGalleryViewModel: ObservableObject {
     @Published var images: [ImageModel] = []
     @Published var selectedImage: ImageModel?
     
-    private let url = "https://jsonplaceholder.typicode.com/photos"
+    private let url = APIConstants.photosURL
     
     /// Fetch images using async/await
     func fetchImages() async {
